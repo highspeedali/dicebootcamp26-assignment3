@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pytest
+pytest-cov
+httpx
+bandit
+ruff
+pip-audit
+
