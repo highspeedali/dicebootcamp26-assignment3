@@ -34,7 +34,7 @@ jobs:
   build:
     name: Build the Docker Image
     needs: lint
-    runs-on: ubuntu-slim
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout the code
