@@ -59,4 +59,4 @@ jobs:
       env:
           HOOK_URL: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
       run: |
-        curl -fsS -X post "${HOOK_URL}"
+        curl -fsS -X POST "${HOOK_URL}"
