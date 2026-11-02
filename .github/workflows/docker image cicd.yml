@@ -45,7 +45,10 @@ jobs:
             cache: pip
 
       - name: Install FastAPI
-        run: pip install fastapi
+        run: pip install fastapi 
+
+      - name: Install httpx2
+        run: pip install httpx2 
 
       - name: Install PyTest
         run: pip install pytest
