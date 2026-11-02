@@ -30,10 +30,28 @@ jobs:
       - name: Code formatting via Ruff
         run: ruff format --check .
 
-      
+  test:
+    name: Test the code using pytest
+    runs-on: ubuntu-slim
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v7
+        with:
+            python-version: "3.13"
+            cache: pip
+
+      - name: Install PyTest
+        run: pip install pytest
+
+      - name: Run the tests
+        run: python -m pytest -v
+
   build:
     name: Build the Docker Image
-    needs: lint
+    needs: [lint,test]
     runs-on: ubuntu-latest
 
     steps:
