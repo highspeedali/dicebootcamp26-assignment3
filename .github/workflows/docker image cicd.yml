@@ -51,5 +51,12 @@ jobs:
         
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag highspeedali/dicebootcamp26-assignment3:${{ vars.APP_VERSION }}
+
     - name: Push the Docker Image
       run: docker push highspeedali/dicebootcamp26-assignment3:${{ vars.APP_VERSION }}
+
+    - name: Trigger the Render Hook to Run Latest Version
+      env:
+          HOOK_URL: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+      run: |
+        curl -fsS -X post "${HOOK_URL}"
