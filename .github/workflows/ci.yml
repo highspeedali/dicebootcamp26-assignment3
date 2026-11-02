@@ -1,1 +1,41 @@
+name: CI Build and Deploy to Render Cloud
 
+on:
+  push:
+    branches: [ "main" ]
+    
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    name: Lint Code via Ruff
+    runs-on: ubuntu-slim
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v7
+        with:
+            python-version: "3.13"
+            cache: pip
+
+      - name: Install Ruff
+        run: pip install ruff
+
+      - name: Check code via Ruff
+        run: ruff check .
+
+      - name: Code formatting via Ruff
+        run: ruff format --check .
+
+      
+  build:
+
+    runs-on: ubuntu-slim
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag dicebootcamp26-assignment3:$(date +%s)
