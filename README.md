@@ -115,6 +115,8 @@ On every push to main branch of this repo:
 - A docker image is then build and its image with latest tag is stored in DockerHub.
 - As a final step, Render Cloud webhook is used to  deploy the latest image on its free model. 
 
+<img width="1833" height="439" alt="CICD Workflow png" src="https://github.com/user-attachments/assets/6f589f01-8d73-42fc-8c93-46725b66cd8b" />
+
 ```
 name: CI Build and Deploy to Render Cloud
 
