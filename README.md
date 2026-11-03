@@ -351,3 +351,17 @@ curl -fsS -X POST "$HOOK_URL"
 <img width="1834" height="732" alt="image" src="https://github.com/user-attachments/assets/ac55a65e-a73f-44f6-a8d5-79fba479679c" />
 
 &nbsp;
+
+### DockerHub
+
+<img width="1245" height="761" alt="image" src="https://github.com/user-attachments/assets/46db0afb-e131-40a4-bd98-ce2924e76222" />
+
+&nbsp;
+
+### Render Cloud
+
+#### Live Render Cloud deployment URL: https://dicebootcamp26-assignment3.onrender.com
+
+&nbsp;
+
+<img width="1888" height="925" alt="image" src="https://github.com/user-attachments/assets/ee047d3e-72d5-4db9-8395-e64c7499554e" />
