@@ -339,3 +339,14 @@ This GitHub Actions workflow stage automates the deployment of the application t
 ```
 curl -fsS -X POST "$HOOK_URL"
 ```
+
+<img width="1842" height="904" alt="image" src="https://github.com/user-attachments/assets/b334ccfb-5169-475c-8c62-a2d003e94344" />
+
+&nbsp;
+<img width="1850" height="506" alt="image" src="https://github.com/user-attachments/assets/9015473c-3e9e-4b6e-908b-1b5f9cba070a" />
+
+&nbsp;
+
+<img width="1834" height="732" alt="image" src="https://github.com/user-attachments/assets/ac55a65e-a73f-44f6-a8d5-79fba479679c" />
+
+&nbsp;
