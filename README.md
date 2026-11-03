@@ -268,6 +268,15 @@ This GitHub Actions workflow stage executes automated tests for the FastAPI appl
 python -m pytest -v
 ```
 
+<img width="1866" height="765" alt="image" src="https://github.com/user-attachments/assets/99b2d27e-a973-4c85-a858-b2651745f41a" />
+
+&nbsp;
+
+<img width="1851" height="730" alt="image" src="https://github.com/user-attachments/assets/88357f73-7154-4514-83e2-b1374de5a15b" />
+
+&nbsp;
+&nbsp;
+
 ### Build stage in GHA
 
 This GitHub Actions workflow stage builds and publishes a Docker image for the application. It runs only after both the **lint** and **test** jobs complete successfully, ensuring that the code meets quality standards and passes all automated tests before creating a deployable artifact. The workflow authenticates with Docker Hub, builds a versioned Docker image, and pushes it to a Docker Hub repository for later deployment.
