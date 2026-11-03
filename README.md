@@ -306,11 +306,14 @@ This GitHub Actions workflow stage builds and publishes a Docker image for the a
 1. **Push Docker Image**
     
     - Uploads the newly built image to Docker Hub.
+    - DOCKERHUB TOKEN is stored as a secret under _settings -> Secretes and Variables -> Actions -> Secrets_ section
     
 ```
 docker push highspeedali/dicebootcamp26-assignment3:${APP_VERSION}
 ```
 
+<img width="1888" height="811" alt="image" src="https://github.com/user-attachments/assets/d8cfad8b-430b-458d-bf8c-750039610914" />
+&nbsp;
 <img width="1848" height="747" alt="image" src="https://github.com/user-attachments/assets/08a08d0e-8a4a-4f1f-8377-74846536ea08" />
 &nbsp;
 <img width="1341" height="820" alt="image" src="https://github.com/user-attachments/assets/436553f1-3813-42bf-ab62-f62fd1bd86ba" />
