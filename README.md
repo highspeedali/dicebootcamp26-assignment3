@@ -311,6 +311,15 @@ This GitHub Actions workflow stage builds and publishes a Docker image for the a
 docker push highspeedali/dicebootcamp26-assignment3:${APP_VERSION}
 ```
 
+<img width="1848" height="747" alt="image" src="https://github.com/user-attachments/assets/08a08d0e-8a4a-4f1f-8377-74846536ea08" />
+&nbsp;
+<img width="1341" height="820" alt="image" src="https://github.com/user-attachments/assets/436553f1-3813-42bf-ab62-f62fd1bd86ba" />
+&nbsp;
+<img width="1837" height="813" alt="image" src="https://github.com/user-attachments/assets/a2a14da2-6701-4b00-b504-4a33957950f6" />
+
+&nbsp;
+&nbsp;
+
 ### Deploy job in GHA
 
 This GitHub Actions workflow stage automates the deployment of the application to **Render Cloud**. It runs only after the **lint**, **test**, and **build** jobs have completed successfully, ensuring that the application has passed quality checks, testing, and Docker image creation before deployment. The workflow triggers a Render deployment using a secure deployment webhook stored as a GitHub secret.
