@@ -335,6 +335,7 @@ This GitHub Actions workflow stage automates the deployment of the application t
 2. **Trigger Render Deployment**
     
     - Retrieves the Render deployment webhook URL from the `RENDER_DEPLOY_HOOK_URL` GitHub secret.
+    - RENDER_DEPLOY_HOOK_URL is stored as a secret under settings -> Secretes and Variables -> Actions -> Secrets section
     - Sends an HTTP POST request using `curl` to initiate a new deployment on Render.
 ```
 curl -fsS -X POST "$HOOK_URL"
