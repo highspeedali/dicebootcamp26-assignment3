@@ -50,6 +50,9 @@ jobs:
       - name: Install httpx2
         run: pip install httpx2 
 
+      - name: Install uvicorn
+        run: pip install uvicorn
+
       - name: Install PyTest
         run: pip install pytest
 
