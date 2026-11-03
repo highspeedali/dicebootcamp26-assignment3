@@ -86,7 +86,10 @@ jobs:
   deploy:
     name: Deploy latest image on Render Cloud
     needs: [lint,test,build]
+    runs-on: ubuntu-latest
+    steps:
+    - name: Use Render WebHook to deploy dicebootcamp26-assignment3:latest 
       env:
-          HOOK_URL: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+        HOOK_URL: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
       run: |
         curl -fsS -X POST "${HOOK_URL}"
