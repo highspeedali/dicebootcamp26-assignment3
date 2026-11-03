@@ -237,8 +237,10 @@ jobs:
     - Runs `ruff format --check .` to verify that the code adheres to the configured formatting standards without modifying files.
 
 <img width="1865" height="772" alt="image" src="https://github.com/user-attachments/assets/66b4d606-ff9e-4865-8733-12e950f1e68b" />
+
 &nbsp;
 &nbsp;
+
 ### Testing job in GHA
 
 This GitHub Actions workflow stage executes automated tests for the FastAPI application using **PyTest**. It runs only after the **lint** job completes successfully, ensuring that code quality checks pass before testing begins. The workflow prepares a Python 3.13 environment, installs the required application and testing dependencies, and then runs the test suite to validate the application's functionality.
